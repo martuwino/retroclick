@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+<meta charset="UTF-8">
+ 
+ 
+<title>Retro Click</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ 
+<header class="header"> 
+    <a href="index.html">
+ <img class="logo" src="IMG_0357.png"></a>
+ <a href="#" class="icono" onclick="MiFuncion()">
+ <i class="fa fa-bars" aria-hidden="true">
+</i> 
+</a>
+    <div class="caja3">
+    <div class="caja3">
+    <div class="caja3">
+
+    </div>
+    </div>
+
+   <nav id= "navegador" class="menu">
+    <ul>
+    <li> <a href="comofunciona.html">¿COMO FUNCIONA?</a></li>
+    <li> <a href="compra.html">COMPRA</a></li>
+    <li> <a href="vende.html">VENDE</a></li>   
+    </ul>
+</nav>
+
+ </header>
+ <main class="content">
+ <section class="text-block text-block-1"><p>¡Bienvenida/o a RetroClick, el lugar donde el pasado cobra vida a través de la moda! Acá celebramos la autenticidad y el estilo atemporal. Compra, vende y descubre piezas vintage con historia, personalidad y un encanto único. Cada prenda tiene un pasado, y ahora puede formar parte de tu futuro. Explora nuestra colección, encontra esa joya especial o dale nueva vida a tus propias prendas. En RetroClick, no solo compras ropa, ¡te conectas con una comunidad!
+</p></section>
+<div class="slider-contenedor">
+    <div class="slider">
+      <div class="slide"> 
+        <img src="recicla-min.PNG"></div>
+      <div class="slide">
+        <img src="consientiza 2.PNG"></div>
+      <div class="slide">
+        <img src="economiza 2.PNG"></div>
+    </div>
+    <button class="boton-anterior">Anterior</button>
+    <button class="boton-siguiente">Siguiente</button>
+  </div>
+</div>
+
+
+ <section class="text-block text-block-2"><p>Nuestra misión es conectar a amantes del estilo vintage con prendas únicas, promoviendo sostenibilidad, autenticidad y comunidad. Cada pieza tiene un pasado, ¡sé parte de su futuro!
+</p></section>
+ <div class="cajacontenedora">
+ <div class="caja">
+ <img src="IMG_0437 (1).jpg"></div>
+ <div class="caja">
+<img src="IMG_0439 (1).jpg"></div>
+</div>
+<!-- Llamado a la acción -->
+<div class="cta">
+    <p>¡Comenza!</p>
+    <a href="comofunciona.html" class="cta-link">Hace click aca</a>
+</div>
+</main>
+ 
+</main>
+ <footer class="footer">
+ 
+
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-phone" aria-hidden="true"></i>
+   
+</footer>
+<script>
+    function MiFuncion() {
+      // aquí se define el ID del elemento que va a tomar la clase
+      var x = document.getElementById("navegador");
+      if (x.className === "menu") {
+        // esta es la clase que se agrega al elemento con el
+        id="navegador"
+        x.className += " responsive";
+        } else {
+        x.className = "menu";
+        }
+     }
+    </script> 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const sliderContenedor = document.querySelector('.slider-contenedor');
+          const slider = document.querySelector('.slider');
+          const slides = document.querySelectorAll('.slide');
+          const botonAnterior = document.querySelector('.boton-anterior');
+          const botonSiguiente = document.querySelector('.boton-siguiente');
+       
+          let indiceActual = 0;
+          const numSlides = slides.length;
+       
+          function actualizarSlider() {
+            slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+            actualizarBotones();
+          }
+       
+          function actualizarBotones() {
+            botonAnterior.disabled = indiceActual === 0;
+            botonSiguiente.disabled = indiceActual === numSlides - 1;
+          }
+       
+          botonAnterior.addEventListener('click', function() {
+            if (indiceActual > 0) {
+              indiceActual--;
+              actualizarSlider();
+            }
+          });
+       
+          botonSiguiente.addEventListener('click', function() {
+            if (indiceActual < numSlides - 1) {
+              indiceActual++;
+              actualizarSlider();
+            }
+          });
+       
+          // Inicializar el slider
+          actualizarSlider();
+      });
+      </script>
+</body>
+</html>
