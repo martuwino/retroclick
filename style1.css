@@ -1,0 +1,479 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+img{max-width: 100%;}
+@media (max-width: 600px) 
+.text-block {height: 80px;}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fd7ad2;
+}
+
+.menu-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #f8bfe5;
+}
+.cajacontenedora {display: flex;flex-flow: wrap;}
+.caja {width: 48%; margin: 1%;
+    border: 1px solid#000; box-sizing: border-box;}
+    .caja2 {background-color: rgb(255, 255, 255);
+        border: 1px solid#000; box-sizing: border-box; text-align: center; margin-top: 20px;}
+        .logo {width: 100px;height: 100px;}
+   
+    
+
+    
+.title-bar {
+    flex-grow: 1;
+    height: 30px;
+    background-color: #ffc3fd;
+    margin-left: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.text-block {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d3d0d0;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-buttons div {
+    width: 30%;
+    height: 50px;
+    background-color: #ffc3fd;
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #f8bfe5;
+    position: relative;
+    margin-top: 60px; /* Ajusta el margen superior */
+    padding-top: 5px;
+}
+
+.footer-content {
+    height: 50px;
+    background-color: #fd7ad2;
+}
+.cta {
+    text-align: center;
+    background-color: #f9a0cb;
+    padding: 20px;
+    border: 2px solid #f9a0cb;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.cta p {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cta-link {
+    text-decoration: none;
+    color: white;
+    background-color: pink;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.icono{text-align: right;font-size: 90px;color: #000; position: absolute; top: 10px;right: 10px;} 
+/* tabletas */
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+.icono {display: none;}
+.comofunciona .text-block {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+}
+.comofunciona .text-block{height: 200%;width: 100%;background-color: #ffffff;
+    border: 1px solid#000; box-sizing: border-box; margin-top: 0%;}
+    .text-block-1 {margin-bottom: 0px; height: fit-content;}
+    .logo {width: 100px;height: 100px;}
+    .text-block-2 {margin-bottom: 20px;}
+.comofunciona .text-block-1{text-align: center;font-family: merriweather;font-size: x-large; background-color: #f8bfe5;}
+.comofunciona .text-block-2 {text-align: center;font-family:Helvetica;font-size: large;}
+.vende .cajacontenedora {display: flex;flex-flow: wrap;}
+.vende .caja {height: 200px;width: 25%;background-color: antiquewhite;
+    border: 1px solid#000; box-sizing: border-box;}
+.vende .cajacontenedora2 {display: flex;flex-flow: wrap; margin-bottom: 80px; display: flex; flex-wrap: wrap; justify-content: center; 
+    gap: 40px;}
+.vende .caja2 {width: 25%;background-color: antiquewhite;
+    border: 1px solid#000; box-sizing: border-box; width: 45%; max-width: 200px; text-align: center; width: 100%;
+    height: auto;
+    object-fit: contain;}
+.vende .logo {width: 100px;height: 100px;}
+.vende .text-block {height: 200px;width: 50%;background-color: #ffffff;}
+.vende .text-block {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 100px;
+    }
+.vende.boton-categoria {
+    display: block;
+    width: 100%; /* Asegura que sean visibles y ocupen el ancho adecuado */
+    text-align: center;
+}
+    .compra .cajacontenedora {display: flex;flex-flow: wrap;}
+    .compra .caja {width: 25%;background-color: antiquewhite;
+        border: 1px solid#000; box-sizing: border-box; margin: 0%; margin-top: 55px;}
+    .compra .cajacontenedora2 {display: flex;flex-flow: wrap;}
+    .compra .caja2 {width: 25%;background-color: antiquewhite;
+                border: 1px solid#000; box-sizing: border-box;}
+    
+    .compra .logo {width: 100px;height: 100px;}
+    .compra .text-block-12 {height: 100px;width: 50%;background-color: #ffffff;
+       solid#000; box-sizing: border-box;margin-bottom: 20px; margin-top: 20px; display: inline-block;
+    width: fit-content; padding: 5px 10px;}
+    .compra .text-block-22 {height: 100px;width: 50%;background-color: #ffffff;
+       solid#000; box-sizing: border-box; margin-top: 20px; display: inline-block;
+    width: fit-content; padding: 5px 10px;}
+    .vende .caja2 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.vende .caja2 img:hover {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+}
+.vende body {
+    background-color: #ffe6e6; /* Rosa claro */
+    color: #333; /* Texto oscuro para contraste */
+}
+.vende .menu a {
+    color: #ff4081; /* Color vibrante para los enlaces */
+}
+.vende .menu ul {
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+.vende .menu.responsive ul {
+    max-height: 500px; /* Expande el menú */
+}
+.vende.caja2 {
+    text-align: center; /* Centrar contenido */
+}
+
+.vende.categoria {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff4081; /* Color vibrante */
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.vende.boton-categoria {
+    display: block;
+    padding: 18px;
+    background-color: #ff4081;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Mantener el color sin cambios */
+.vende.boton-categoria:active {
+    background-color: #ff4081;
+    
+}   
+.compra.boton-categoria {
+    display: block;
+    padding: 18px;
+    background-color: #ff4081;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 10px; 
+    display: block; 
+}
+
+/* Mantener el color sin cambios */
+.compra.boton-categoria:active {
+    background-color: #ff4081;
+}
+.comofunciona .form-container {
+    background-color: #fd7ad2; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 50px; /* Separa el formulario del footer */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que los cuadros estén centrados */
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 80%; /* Ajusta el ancho de los cuadros */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Centra el texto dentro de los cuadros */
+}
+
+button {
+    background-color: #ff3385;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0055;
+}
+
+#successMessage {
+    color: green;
+    margin-top: 10px;
+}
+.comofunciona .cta-button {
+    display: inline-block;
+    background-color: #fd7ad2; /* Color vibrante */
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.comofunciona.cta-button:hover {
+    background-color: #fd7ad2;
+}
+.vende .caja2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; /* Se adapta al contenido */
+    padding: 10px;
+}
+/*celulares*/
+@media (max-width: 480px) {
+    .caja {width: 100%;}
+    .vende .caja2{width: 50%;}
+    .compra .caja2 {width: 50%; gap: 40px;}
+   .compra .caja {width: 50%; gap: 40px;margin-top: 55px;}
+   .slider-contenedor {width: 50%;}
+   .text-block-1 {height: fit-content;}
+   .text-block-2 {height: fit-content;}
+   .text-block-13 p {text-align: center;}
+   .slider img { height: auto; width: 100%;/* Permite que la imagen se ajuste proporcionalmente */}
+
+  
+
+.menu {
+    display: none; /* Oculto por defecto en móviles */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    flex-direction: column;
+    text-align: right;
+}
+
+.icono {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+.responsive {display: block;}
+}
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.text-block-1 p {text-align: center; font-size: large;font-family: merriweather;}
+.text-block-2 p {text-align: center; font-size: medium;font-family: merriweather;}
+.text-block-12 p {text-align: left; font-size: xx-large;font-family: marriweather;}
+.text-block-22 p {text-align: left; font-size: xx-large;font-family: merriweather;}
+.text-block-13 p {text-align: left; font-size: x-large;font-family:merriweather;}
+
+.slider-contenedor {
+    position: relative; /* Para posicionar los botones dentro */
+    width: 100%; /* Ancho del viewport */
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+  }
+   
+  .slider {
+    display: flex;
+    width: 100%; /* Inicialmente al 100%, se ajustará con JS */
+    scroll-snap-type: x mandatory; /* Activa el "snap" horizontal obligatorio */
+    scroll-behavior: smooth; /* Para el desplazamiento suave controlado por JS */
+  }
+   
+  .slide {
+    flex: 0 0 100vw; /* No crecer ni encoger, ancho del viewport */
+    height: 400px; /* Altura deseada para los slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    background-color: #333; /* Color de fondo predeterminado */
+    scroll-snap-align: start; /* El inicio del slide se alinea con el inicio del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    margin-top: 20px;
+  }
+   
+  .boton-anterior, .boton-siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    z-index: 10; /* Asegura que los botones estén por encima del slider */
+  }
+  .boton-anterior {
+    left: 10px;
+  }
+   
+  .boton-siguiente {
+    right: 10px;
+  }
+   
+   
+  .boton-anterior:disabled, .boton-siguiente:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+/* Quitar el color azul y el subrayado de los enlaces */
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #000;
+}
+
+/* Footer abajo */
+.footer1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8bfe5;
+    color: #000;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+/* Estilo para el pop-up */
+.comofunciona .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.comofunciona .popup-content {
+    font-size: 18px;
+    color: #000;
+}
+
+.comofunciona .popup button {
+    background-color: #ff3385;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.comofunciona .popup button:hover {
+    background-color: #ff0055;
+}
+.iframe{margin-bottom: 10px;}
