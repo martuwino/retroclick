@@ -1,0 +1,72 @@
+/* Box-sizing global para evitar desbordes por padding/border */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.anuncio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #fd7ad2;
+    margin: auto;
+    flex-direction: column; /* Valor por defecto para móviles */
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.anuncio img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.anuncio h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #000;
+}
+
+.anuncio a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc0cb;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Diseño para escritorio */
+@media (min-width: 728px) {
+    .anuncio {
+        flex-direction: row;
+        width: 728px;
+        height: 90px;
+        padding: 10px;
+        max-width: 100%; /* Por si el contenedor padre es más chico */
+    }
+
+    .anuncio img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .anuncio h1 {
+        flex: 1;
+        margin: 0;
+        text-align: left;
+    }
+
+    .anuncio a {
+        margin-left: auto;
+        margin-top: 0;
+    }
+}
