@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+<meta charset="UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>Retro Click</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+ <link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ 
+<header class="header"> 
+    <a href="index.html">
+        <img class="logo" src="IMG_0357.png"></a>
+        <a href="#" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars" aria-hidden="true">
+       </i> 
+    </a>
+        <nav id= "navegador" class="menu">
+           <ul>
+           <li> <a href="comofunciona.html">¿COMO FUNCIONA?</a></li>
+           <li> <a href="compra.html">COMPRA</a></li>
+           <li> <a href="vende.html">VENDE</a></li>   
+           </ul>
+       </nav>
+ 
+ 
+ </header>
+ <main class="content compra">
+ <div class="cajacontenedora">
+  <div class="caja">
+    <a href="remera 1 precio-min.jpg" data-lightbox="fotos" title="Remera Louis">
+    <img src="remera 1 precio-min chica.jpg">
+</a>
+    <button class="boton-categoria">COMPRA</button>
+  </div>
+  <div class="caja">
+    <a href="remera 2 precio-min.jpg" data-lightbox="fotos" title="Remera Guitarra">
+    <img src="remera 2 precio-min chica.jpg">
+</a>
+    <button class="boton-categoria">COMPRA</button>
+  </div>
+  <div class="caja">
+     <a href="remera 3 precio-min.jpg" data-lightbox="fotos" title="Remera 77">
+    <img src="remera 3 precio-min chica.jpg">
+</a>
+    <button class="boton-categoria">COMPRA</button>
+  </div>
+  <div class="caja">
+     <a href="remera 4 precio-min.jpg" data-lightbox="fotos" title="Remera Estrella">
+    <img src="remera 4 precio-min chica.jpg">
+</a>
+    <button class="boton-categoria">COMPRA</button>
+  </div>
+
+ 
+ 
+ <div class="navigation-buttons"></div>
+ <div class="cajacontenedora">
+ <div class="caja">
+  <a href="pantalon 1 precio-min.jpg" data-lightbox="fotos" title="Jean Rayas">
+    <img src="pantalon 1 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+ <div class="caja">
+    <a href="pantalon 2 precio-min.jpg" data-lightbox="fotos" title="Jean Zebra">
+    <img src="pantalon 2 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+ <div class="caja">
+   <a href="pantalon 3 precio-min.jpg" data-lightbox="fotos" title="Jean Peluche">
+    <img src="pantalon 3 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+ <div class="caja">
+    <a href="pantalon 4 precio-min.jpg" data-lightbox="fotos" title="Jean Básico">
+    <img src="pantalon 4 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+</div>
+
+ <div class="navigation-buttons"></div>
+ <div class="cajacontenedora">
+ <div class="caja">
+    <a href="campera 1 precio-min.jpg" data-lightbox="fotos" title="Campera Peluchito">
+    <img src="campera 1 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+ <div class="caja">
+    <a href="campera 2 precio-min.jpg" data-lightbox="fotos" title="Campera Marron">
+    <img src="campera 2 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+ <div class="caja">
+    <a href="campera 3 precio-min.jpg" data-lightbox="fotos" title="Campera Adidas">
+    <img src="campera 3 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+ <div class="caja">
+    <a href="campera 4 precio-min.jpg" data-lightbox="fotos" title="Campera Gris">
+    <img src="campera 4 precio-min chica.jpg">
+</a>
+  <button class="boton-categoria">COMPRA</button>
+  </div>
+</div>
+
+
+
+ 
+</main>
+ <footer class="footer">
+ 
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-phone" aria-hidden="true"></i>
+ <p>Tocá acá para conocer el proceso de la página</p>
+  <a href="https://martuwino.github.io/retroclick/presentacion.html" class="btn-footer" target="_blank">Ir a la presentación</a>
+</footer>
+<script>
+    function MiFuncion() {
+      // aquí se define el ID del elemento que va a tomar la clase
+      var x = document.getElementById("navegador");
+      if (x.className === "menu") {
+        // esta es la clase que se agrega al elemento con el
+        id="navegador"
+        x.className += " responsive";
+        } else {
+        x.className = "menu";
+        }
+     }
+    </script> 
+<script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
